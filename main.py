@@ -7,7 +7,7 @@ app = FastAPI()
 #uvicorn stream_audio:app --host 0.0.0.0 --port 8000
 
 # Path to the audio file you want to stream
-AUDIO_FILE_PATH = "/Harvard list 01.wav"  # Replace with your file path
+AUDIO_FILE_PATH = "Harvard list 01.wav"  # Replace with your file path
 
 @app.get("/")
 def index():
