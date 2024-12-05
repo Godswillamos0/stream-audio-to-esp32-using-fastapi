@@ -1,4 +1,4 @@
-from fastapi import FastAPI, Response
+sfrom fastapi import FastAPI, Response
 from fastapi.responses import StreamingResponse
 import os
 
@@ -11,7 +11,7 @@ AUDIO_FILE_PATH = "/Harvard list 01.wav"  # Replace with your file path
 
 @app.get("/")
 def index():
-    return {"name":"John"}
+    return {"message":"Hello_world"}
 
 
 def audio_streamer(file_path: str):
