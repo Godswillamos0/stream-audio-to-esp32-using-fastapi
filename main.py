@@ -9,6 +9,10 @@ app = FastAPI()
 # Path to the audio file you want to stream
 AUDIO_FILE_PATH = "/Harvard list 01.wav"  # Replace with your file path
 
+@app.get("/")
+def index():
+    return {"name":"John"}
+
 
 def audio_streamer(file_path: str):
     """
